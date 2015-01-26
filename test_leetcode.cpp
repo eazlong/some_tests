@@ -188,6 +188,8 @@ void print_number( unsigned int digit )
 			break;
 		cout << num << endl;
 	}
+
+	delete [] num;
 }
 
 struct list_node
@@ -311,25 +313,6 @@ complex_list_node* complex_list_copy( complex_list_node* src )
 	}
 
 	return dest;
-}
-tree_node* get_left_last_node( tree_node* node )
-{
-	tree_node* temp = node;
-	while ( temp->right != NULL )
-	{
-		temp = temp->right;
-	}
-	return temp;
-}
-
-tree_node* get_left_right_node( tree_node* node )
-{
-	tree_node* temp = node;
-	while ( temp->left != NULL )
-	{
-		temp = temp->left;
-	}
-	return temp;
 }
 
 void convert_tree_to_list( tree_node* root, tree_node** last )

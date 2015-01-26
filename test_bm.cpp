@@ -32,7 +32,7 @@ bool get_bmbc( const char* pattern, int* bmbc )
 
 //从右往左查找每一个字符左边与后缀相同的字符最大个数,最后固定为字符串长度
 // ababcabab
-// 020400209  
+// 020400209
 bool get_suffix( const char* pattern, int* suffix )
 {
 	if ( pattern == NULL || suffix == NULL )
