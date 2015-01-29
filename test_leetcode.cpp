@@ -353,7 +353,7 @@ void permutation( char* str, char* start )
 
 		permutation( str, ch );
 
-		char temp = *ch;
+		temp = *ch;
 		*ch = *start;
 		*start = temp;
 	}

@@ -188,6 +188,7 @@ int main( int argc, char* argv )
 		cout << "6. merge sort" << endl;
 		cout << "----------data structure--------------" << endl;
 		cout << "7. rb tree" << endl;
+		cout << "8. minimum heap" << endl;
 
 		int selected;
 		cin >> selected;
@@ -216,6 +217,9 @@ int main( int argc, char* argv )
 			test_rb_tree();
 			break;
 		case 8:
+			test_minimum_heap();
+			break;
+		case 9:
 			test_mid_value();
 			break;
 		default:

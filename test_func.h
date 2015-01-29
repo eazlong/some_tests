@@ -26,6 +26,7 @@ void test_heap();
 void test_merge();
 
 void test_rb_tree();
+void test_minimum_heap();
 
 void test_mid_value();
 void test_rebuild_tree();
